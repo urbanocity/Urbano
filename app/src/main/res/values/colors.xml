@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="Primary">#EF6C00</color>
+    <color name="Dark">#E65100</color>
+    <color name="Darkest">#11171a</color>
+    <color name="Accent">#B0BEC5</color>
+    <color name="Background">#FFFFFF</color>
+
+    <color name="Tone1">#FAFAFA</color>
+    <color name="Tone2">#F5F5F5</color>
+    <color name="Tone3">#EEEEEE</color>
+    <color name="Tone4">#E0E0E0</color>
+    <color name="Tone5">#BDBDBD</color>
+    <color name="Tone6">#9E9E9E</color>
+    <color name="Tone7">#757575</color>
+    <color name="Tone8">#616161</color>
+    <color name="Tone9">#424242</color>
+
+    <color name="Grey">#424242</color>
+    <color name="GreyDark">#212121</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Black">#000000</color>
+    <color name="Red">#D50000</color>
+    <color name="RedDark">#B71C1C</color>
+    <color name="Pink">#F50057</color>
+    <color name="PinkDark">#AD1457</color>
+    <color name="PinkDarker">#880E4F</color>
+    <color name="Blue">#2962FF</color>
+    <color name="BlueDark">#0D47A1</color>
+    <color name="Teal">#009688</color>
+    <color name="TealDark">#004D40</color>
+    <color name="Yellow">#FFFF00</color>
+    <color name="Amber">#FFC107</color>
+    <color name="AmberDark">#ecb204</color>
+    <color name="Orange">#EF6C00</color>
+    <color name="OrangeDark">#E65100</color>
+    <color name="Green">#00C853</color>
+    <color name="GreenDark">#1B5E20</color>
+
+</resources>

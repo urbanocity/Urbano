@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/eloborate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Tone1"
+    android:clipToPadding="false">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/Primary"
+        android:clickable="true"
+        android:clipToPadding="false"
+        android:elevation="4dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:onClick="bt_back"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:tint="@color/Tone3"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tv_tb_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:gravity="left"
+            android:text="ITEM DETAILS"
+            android:textColor="#FFF"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bt_register"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="2dp"
+                android:clipToPadding="false"
+                android:elevation="2dp" />
+
+            <LinearLayout
+                android:id="@+id/ll11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Tone1"
+                android:baselineAligned="false"
+                android:clickable="true"
+                android:clipToPadding="false"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:padding="18dp">
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="12dp">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="1dp"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="8dp"
+                        android:text="PG for 2 with Great Food"
+                        android:textColor="@color/Grey"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_duration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:text="5 MONTHS"
+                        android:textColor="@color/Tone6"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="4dp"
+                        android:text="Rs. 2500"
+                        android:textColor="@color/Orange"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_seperator"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/Tone4"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/Tone1"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:text="ITEM DESCRIPTION"
+                    android:textColor="@color/Tone7"
+                    android:textSize="9dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="4dp"
+                    android:textSize="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/Grey"
+        android:clickable="true"
+        android:elevation="3dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BUY NOW and PAY"
+            android:textColor="@color/White"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="4dp"
+            android:tint="@color/White"
+            app:srcCompat="@drawable/ic_arrow" />
+
+    </LinearLayout>
+
+</RelativeLayout>

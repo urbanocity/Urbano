@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/l_holder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/upper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lower"
+        android:layout_alignParentTop="true"
+        android:background="@color/Tone1"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:text="URBANO"
+            android:textColor="@color/Grey"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email ID"
+            android:textSize="11dp" />
+
+        <EditText
+            android:id="@+id/l_et_uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="11dp" />
+
+        <EditText
+            android:id="@+id/l_et_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/bt_forgot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Forgot Password?"
+            android:textColor="@color/TealDark"
+            android:textSize="11dp" />
+
+        <Button
+            android:id="@+id/l_bt_login"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:text="Log in" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/Tone3"
+        android:elevation="4dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't Have an Account?"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/bt_signup_buyer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="18dp"
+            android:text="BUYER SIGNUP" />
+
+        <Button
+            android:id="@+id/bt_signup_seller"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="18dp"
+            android:text="SELLER SIGNUP" />
+    </LinearLayout>
+</RelativeLayout>

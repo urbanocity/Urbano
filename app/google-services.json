@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "513198681779",
+    "firebase_url": "https://urbano-46192.firebaseio.com",
+    "project_id": "urbano-46192",
+    "storage_bucket": "urbano-46192.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513198681779:android:327597a394d5433d",
+        "android_client_info": {
+          "package_name": "com.urbano.urbano"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513198681779-g0ofsfp5umhs8trrb0ia6unc86ajhehb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoC4jGOrBx9VS411z_oBdZ2RtORr9xrmE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

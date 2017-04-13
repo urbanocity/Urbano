@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:clipToPadding="false"
+    android:elevation="1dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Tone1"
+        android:baselineAligned="false"
+        android:clickable="true"
+        android:clipToPadding="false"
+        android:elevation="1dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:gravity="center_vertical|center_horizontal"
+        android:onClick="onclick_catlog"
+        android:orientation="horizontal"
+        android:padding="18dp">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="16dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:elevation="1dp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="6dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="1dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/Grey"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                tools:text="PG for 2 with Great Food" />
+
+            <TextView
+                android:id="@+id/tv_duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:textColor="@color/Tone7"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                tools:text="2 MONTHS" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingTop="4dp"
+                android:textColor="@color/Orange"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                tools:text="Rs. 2500" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_seperator"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/Tone5"
+        android:orientation="vertical"></LinearLayout>
+</LinearLayout>
